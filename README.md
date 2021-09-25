@@ -10,31 +10,43 @@ Cada pestaña de la aplicación, será otra aplicación en versión monorepo o m
 
 ### Con base Angular Cli 12 por defecto
 
-- monorepo angular application
+#### ng generate application
 
-- monorepo-multirepo angular application
+Creación microfrontends con la funcionalidad de generate applications de [Angular Cli](https://angular.io/cli/generate#application-command). Esto nos permitirá desplegar todas las aplicaciones conjuntamente o cada aplicación por separado. Además, según el build que utlicemos, utilizará la configuración global o la específica de cada subproyecto.
+
+Además también existe un modo avanzado de configuración, para importaciones dinámicas, mediante la modificación del angular.json global. Con lo que podríamos añadir configuraciones avanzadas para lazy loading cuando cargasemos cada aplicación.
+
+Para los dos casos de ejemplos que vamos a montar, utilizaremos una aproximación monorepo, donde tendremos todo el contenido de la aplicación en este mismo repositorio y compartiendo las mismas dependencias. Y una segunda aproximación, mediante [.submodules de git](https://git-scm.com/book/en/v2/Git-Tools-Submodules), que nos permitirá tener versionado y en otro repositorio la otra aplicación, a pesar de compartir dependencias.
+
+- mono-app
+
+- multi-app angular application
+
+#### angular library
 
 - monorepo angular library package.json
 
 - monorepo-multi angular library
 
-- multirepo angular elements import
-
-- multirepo angular elements librería a parte
-
-- multirepo angular elements remitir al otro proyecto
-
-- multirepo vue con webcomponents
-
-- multirepo lerna y otras librerías
-
-- multirepo iframe
+#### Webcomponents
 
 - multirepo litelement
 
 - multirepo stencil
 
 - multirepo webcomponent pequeño
+
+##### angular elements
+
+Existen muchas aproximaciones para la utilización de webcomponents con Angular Elements, para importar proyectos con y sin lazy loading. Hay que recordar, que cuando utilizamos microfrontends, no nos referimos a importar toda una pestaña completa, sino también funcionalidades concretar.
+
+Dado que este contenido ya lo desarrollé hace un par de años con Angular 9, os dejo el [otro repositorio donde podréis encontrar](https://github.com/jesuscuesta/angular-elements) muchas de las opciones para generar e importar angular elements en un proyecto de Angular.
+
+#### angular others frontends
+
+- multirepo vue con webcomponents
+
+- multirepo lerna y otras librerías
 
 - multirepo react
 
@@ -45,6 +57,10 @@ Cada pestaña de la aplicación, será otra aplicación en versión monorepo o m
 - con configuración nginx
 
 - con ssr
+
+- multirepo iframe
+
+- a través de jenkins/travis...
 
 ### Otras soluciones con Angular
 
