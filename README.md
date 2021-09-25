@@ -2,6 +2,68 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
 
+En este proyecto intentaremos resumir diferentes aproximaciones para llevar a cabo Microfrontends. Las soluciones que llevaremos a cabo, será a través de un portal central desarrollado con Angular V12, con la configuración por defecto.
+
+Cada pestaña de la aplicación, será otra aplicación en versión monorepo o multirepo, con angular u otras tecnologías.
+
+## Aproximaciones
+
+### Con base Angular Cli 12 por defecto
+
+- monorepo angular application
+
+- monorepo-multirepo angular application
+
+- monorepo angular library package.json
+
+- monorepo-multi angular library
+
+- multirepo angular elements import
+
+- multirepo angular elements librería a parte
+
+- multirepo angular elements remitir al otro proyecto
+
+- multirepo vue con webcomponents
+
+- multirepo lerna y otras librerías
+
+- multirepo iframe
+
+- multirepo litelement
+
+- multirepo stencil
+
+- multirepo webcomponent pequeño
+
+- multirepo react
+
+- multirepo sveltejs
+
+- con pestaña virtual, compartiendo datos
+
+- con configuración nginx
+
+- con ssr
+
+### Otras soluciones con Angular
+
+- Con Base NX
+
+- module federation
+
+- monorepo manfredsteyer module federation
+
+- Lerna y otras aproximaciones
+
+### Otras tecnologías frontend
+
+- Base React
+
+- Base Vuejs
+
+- Base Sveltejs
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
