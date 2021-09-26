@@ -4,7 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:mono-app": "ng serve mono-app",
+    "start:multi-app": "ng serve multi-app",
     "build": "ng build",
+    "build:mono-app": "ng build",
+    "build:multi-app": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
