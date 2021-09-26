@@ -8,6 +8,45 @@ Cada pestaña de la aplicación, será otra aplicación en versión monorepo o m
 
 ## Aproximaciones
 
+1. Angular
+   1. Angular Cli por defecto
+      1. ng g application
+         1. mono repo
+         2. mono repo con lazy loadgin
+         3. multi repo con submodules
+         4. multi repo con importación
+      2. angular library
+         1. Mono repo importación
+         2. Multi repo packaje.json
+         3. Multi repo CDN
+      3. Webcomponents
+         1. Angular Elements Multi-repo y Mono-repo
+            1. Con importación
+            2. Con lazy loading
+            3. Con ngx-build
+            4. Con librería externa para importación
+            5. Con CDN
+         2. Multi repo Lit-element
+         3. Multi repo Stenciljs
+         4. Multi repo Vanyllajs
+      4. Iframes
+      5. Tabs virtuales
+      6. SSR
+      7. Configuración Ngnix
+      8. A través de Jenkins/Travis
+   2. Extract Webpack
+      1. Module federation
+      2. Library Manfred Steyer Module federation
+   3. NX
+      1. La mayoría de las soluciones de Angular Cli
+      2. Plugins
+
+2. Otras tecnologías frontend para el portal central
+   1. Portal con Lerna
+   2. Portal con Reactjs
+   3. Portal con Vuejs
+   4. Portal con Sveltejs
+
 ### Con base Angular Cli 12 por defecto
 
 #### ng generate application
@@ -104,26 +143,4 @@ Dado que este contenido ya lo desarrollé hace un par de años con Angular 9, os
 
 #### Base Sveltejs
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
