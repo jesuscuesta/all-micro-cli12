@@ -54,11 +54,11 @@ Para probar esta aplicación, utilizaremos la funcionalidad de .submodules de gi
 
 #### Webcomponents
 
-- multirepo litelement
+##### multirepo litelement
 
-- multirepo stencil
+##### multirepo stencil
 
-- multirepo webcomponent pequeño
+##### multirepo webcomponent vanylla js
 
 ##### angular elements
 
@@ -68,41 +68,41 @@ Dado que este contenido ya lo desarrollé hace un par de años con Angular 9, os
 
 #### angular others frontends
 
-- multirepo vue con webcomponents
+##### multirepo vue con webcomponents
 
-- multirepo lerna y otras librerías
+##### multirepo lerna y otras librerías
 
-- multirepo react
+##### multirepo react
 
-- multirepo sveltejs
+##### multirepo sveltejs
 
-- con pestaña virtual, compartiendo datos
+##### con pestaña virtual, compartiendo datos
 
-- con configuración nginx
+##### con configuración nginx
 
-- con ssr
+##### con ssr
 
-- multirepo iframe
+##### multirepo iframe
 
-- a través de jenkins/travis...
+##### a través de jenkins/travis
 
 ### Otras soluciones con Angular
 
-- Con Base NX
+#### Con Base NX
 
-- module federation
+#### module federation
 
-- monorepo manfredsteyer module federation
+#### monorepo manfredsteyer module federation
 
-- Lerna y otras aproximaciones
+#### Lerna y otras aproximaciones
 
 ### Otras tecnologías frontend
 
-- Base React
+#### Base React
 
-- Base Vuejs
+#### Base Vuejs
 
-- Base Sveltejs
+#### Base Sveltejs
 
 ## Development server
 
