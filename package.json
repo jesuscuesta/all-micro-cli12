@@ -7,8 +7,8 @@
     "start:mono-app": "ng serve mono-app",
     "start:multi-app": "ng serve multi-app",
     "build": "ng build",
-    "build:mono-app": "ng build",
-    "build:multi-app": "ng build",
+    "build:mono-app": "ng build mono-app",
+    "build:multi-app": "ng build multi-app",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

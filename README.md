@@ -14,6 +14,8 @@ Cada pestaña de la aplicación, será otra aplicación en versión monorepo o m
 
 Creación microfrontends con la funcionalidad de generate applications de [Angular Cli](https://angular.io/cli/generate#application-command). Esto nos permitirá desplegar todas las aplicaciones conjuntamente o cada aplicación por separado. Además, según el build que utlicemos, utilizará la configuración global o la específica de cada subproyecto.
 
+Para generar cada subaplicación hemos utilizado `ng g application nombre-aplicacion`.
+
 Los comandos que tenemos para generar las subaplicaciones por separado:
 
 ```js
@@ -34,9 +36,15 @@ Además también existe un modo avanzado de configuración, para importaciones d
 
 Para los dos casos de ejemplos que vamos a montar, utilizaremos una aproximación monorepo, donde tendremos todo el contenido de la aplicación en este mismo repositorio y compartiendo las mismas dependencias. Y una segunda aproximación, mediante [.submodules de git](https://git-scm.com/book/en/v2/Git-Tools-Submodules), que nos permitirá tener versionado y en otro repositorio la otra aplicación, a pesar de compartir dependencias.
 
-##### mono-app
+##### mono-app sin Lazy Loading
+
+##### mono-repo-lazy con Lazy Loading
+
+Es la misma opción que la de mono-app, pero cargándola como lazy loading. A diferencia del mono-app, si intentamos cargar esta aplicación individualmente no funcionará. En el caso de que quisiésemos que nos funcionase, deberíamos modificar algunas configuraciones de la aplicación.
 
 ##### multi-app angular application
+
+Para probar esta aplicación, utilizaremos la funcionalidad de .submodules de git.
 
 #### angular library
 
